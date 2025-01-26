@@ -12,7 +12,7 @@ public class Motorcycle extends Vehicle{
     }
 
     public void fixed() {
-        System.out.println("Car has been repaired. \nAll systems are operational, and the car is ready for a smooth ride.");
+        System.out.println("Motorcycle has been repaired. \nAll systems are operational, and the motorcycle is ready for the road.");
     }
 
     @Override
