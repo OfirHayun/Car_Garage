@@ -27,7 +27,6 @@ public class Main {
                 name = scanner.nextLine();
             }
 
-
             switch (input) {
                 case 1 -> {
                     vehicle = new Motorcycle(name);
@@ -57,7 +56,14 @@ public class Main {
 
         } while (input != 0);
 
-        Garage garage = new Garage(DB.getVehicles());
+        Protocol_Garage protocol = new Protocol_Garage() {
+            @Override
+            public void fixed() throws InterruptedException {
+                System.out.println("\nAll vehicles have been repaired.");
+            }
+        };
+
+        Garage garage = new Garage(DB.getVehicles(), protocol);
         garage.fixed();
 
 
