@@ -13,10 +13,10 @@ public class Main {
 
         do {
             System.out.println("\nGarage menu:\n" +
-                    "1-> Motorcycle\n" +
-                    "2-> Truck\n" +
-                    "3-> Car\n" +
-                    "0-> Exit");
+                    "1. Motorcycle\n" +
+                    "2. Truck\n" +
+                    "3. Car\n" +
+                    "0. Exit");
 
             input = scanner.nextInt();
             scanner.nextLine();
